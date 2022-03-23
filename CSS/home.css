@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
 }
 
-* {
+
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
+
 
 .header {
     background:#0f4596;
@@ -124,99 +129,23 @@ nav .content .links {
     top: 0;
 }
 
-@media screen and (max-width: 1250px) {
-    .header nav {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-    nav .content .links {
-        margin-left: 30px;
-    }
-    .content .links li a {
-        padding: 8px 13px;
-    }
-}
-
-@media screen and (max-width: 912px) {
-    .header .icone-menu {
-        display: block;
-    }
-    .header #mostrar-menu:checked~.icone-menu i::before {
-        content: "\f00d";
-    }
-    nav .content .links {
-        display: block;
-        position: fixed;
-        background:#095594;
-        height: 100%;
-        width: 100%;
-        top: 70px;
-        left: -100%;
-        margin-left: 0;
-        max-width: 350px;
-        overflow-y: auto;
-        padding-bottom: 100px;
-        transition: all 0.3s ease;
-    }
-    nav #mostrar-menu:checked~.content .links {
-        left: 0%;
-    }
-    .content .links li {
-        margin: 15px 20px;
-    }
-    .content .links li a,
-    .content .links li label {
-        line-height: 40px;
-        font-size: 20px;
-        display: block;
-        padding: 8px 18px;
-        cursor: pointer;
-    }
-    .content .links li a.menu-dropdown{
-        display: none;
-    }
-  
-    .content .links ul,
-    .content .links ul ul {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        background: none;
-        max-height: 0px;
-        overflow: hidden;
-    }
-    .content .links #mostrar-links:checked~ul,
-    .content .links #show-services:checked~ul,
-    .content .links #show-items:checked~ul {
-        max-height: 100vh;
-    }
-    .content .links ul li {
-        margin: 7px 20px;
-    }
-    .content .links ul li a {
-        font-size: 18px;
-        line-height: 30px;
-        border-radius: 5px!important;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .header nav {
-        padding: 0 10px;
-    }
-    .content .logo a {
-        font-size: 27px;
-    }
-}
+/* MAIN */
 
 
 .MeioPagina {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #3769b6;
     display: flex;
-    
+    align-items: center;
 }
+
+.MeioPagina-textos{
+    width: 40%;
+    padding: 50px 20px 0 40px ;
+    margin: 0 auto;
+}
+
 .H1{
     color: white;
     font-size: 30px;
@@ -261,9 +190,8 @@ nav .content .links {
 
 .pcs {
     border: 1px solid rgb(255, 255, 255);
-    width: 23%;
+    width: 24vw;
     height: 450px;
-    margin-top: 12%;
     margin-right: 10%;
     border-radius: 60px;
 }
@@ -327,18 +255,7 @@ nav .content .links {
     100%{
         background-position: 0% 50%;
     }
-}
-@media screen and (max-width:700px) {
-    
-    .MeioPagina{
-        display: flex;
-        flex-direction: column;
-        height: 140vh;
-    }
-    .pcs{
-        margin-bottom:20px;
-        margin-left: -200px;
-    }
+
 }
 
 
@@ -424,51 +341,9 @@ nav .content .links {
 }
 
 
-@media screen and (max-width:700px) {
-    .MeioPagina{
-        width: 380vw;
-        display: flex;
-        flex-direction: column;
-        height: 330vh;
-    }
-    .pcs{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom:20px;
-        width: 350px;
-    }
-    .MeioPagina-textos{
-        margin-left:90px;
-        
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        width: 380vw;
-    }
-    .contato{
-        margin-top: 70px;
-    }
-    .textos{
-        margin-top: 50px;
-    }
-}
-@media  screen and (max-width: 700px){
-    .pcs{
-        margin-top: 200px;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .contato{
-        margin-top: 5px;
-    }
-    .textos{
-        margin-top: 5px;
-    }
 
-}
+
+
 @media screen and (max-width: 1920px) and (min-width: 1866px) {
     .H1{
         margin-top: 100px;
@@ -502,5 +377,94 @@ nav .content .links {
         margin-top: 12%;
         margin-right: 10%;
         border-radius: 60px;
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .header nav {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    nav .content .links {
+        margin-left: 30px;
+    }
+    .content .links li a {
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    .header .icone-menu {
+        display: block;
+    }
+    .header #mostrar-menu:checked~.icone-menu i::before {
+        content: "\f00d";
+    }
+    nav .content .links {
+        display: block;
+        position: fixed;
+        background:#095594;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 350px;
+        overflow-y: auto;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+    }
+    nav #mostrar-menu:checked~.content .links {
+        left: 0%;
+    }
+    .content .links li {
+        margin: 15px 20px;
+    }
+    .content .links li a,
+    .content .links li label {
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+        cursor: pointer;
+    }
+    .content .links li a.menu-dropdown{
+        display: none;
+    }
+  
+    .content .links ul,
+    .content .links ul ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .content .links #mostrar-links:checked~ul,
+    .content .links #show-services:checked~ul,
+    .content .links #show-items:checked~ul {
+        max-height: 100vh;
+    }
+    .content .links ul li {
+        margin: 7px 20px;
+    }
+    .content .links ul li a {
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 5px!important;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .header nav {
+        padding: 0 10px;
+    }
+    .content .logo a {
+        font-size: 27px;
     }
 }
