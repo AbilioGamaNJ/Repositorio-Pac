@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/main.css">
-    <link rel="shortcut icon" href="../IMAGENS/pngwing.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Repositorio-Pac/CSS/main.css">
+    <link rel="shortcut icon" href="../Repositorio-Pac/IMAGENS/Engrenagem.png" type="image/x-icon">
     <title>CRUD</title>
 </head>
 
 <body>
     <header>
         <h1 class="header-title">Cadastro de peças</h1>
-        <a href="home.html"><img src="../IMAGENS/Pac com instinto superior.png" class="image" title="Página Inicial"></a>
+        <a href="index.html"><img src="../Repositorio-PAC/IMAGENS/Pac.png" class="image" title="Página Inicial"></a>
     </header>
     <main>
         <div class="tabelinha">
-            <button type="button" class="button blue mobile" id="cadastrarPeças">Cadastrar peças</button>
+            <div class="botoes">
+                <button type="button" class="button blue mobile" id="cadastrarPeças">Cadastrar peças</button>
+                <button onclick="Mostruario()" type="button" class="button blue mobile" >Ir para mostruário</button>
+                <button onclick="CadastroCliente()" type="button" class="button blue mobile" >Administração das Contas</button>
+            </div>
             <table id="tabelaPeças" class="records">
                 <thead>
                     <tr>
@@ -55,5 +59,5 @@
     </main>
 
 </body>
-<script src="../JS/crud.js" defer></script>
+<script src="../Repositorio-Pac/JS/crud.js" defer></script>
 </html>

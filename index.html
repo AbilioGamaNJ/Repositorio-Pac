@@ -2,24 +2,24 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página da Empresa</title>
-    <link rel="stylesheet" href="../CSS/paginaempresa.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SA PAC</title>
+    <link rel="stylesheet" href="../Repositorio-Pac/CSS/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="shortcut icon" href="../IMAGENS/Pac com instinto superior.png" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="../Repositorio-Pac/IMAGENS/Pac.png" type="image/x-icon">
+
 <body>
     <div class="header">
-        <nav>
+        <nav > 
             <input type="checkbox" id="mostrar-menu">
             <label for="mostrar-menu" class="icone-menu"><i class="fas fa-bars"></i></label>
             <div class="content">
                 <div class="logo">
-                    <a href="#"><img id="logo" src="../IMAGENS/Pac com instinto superior.png"></a>
+                    <a href="#"><img onclick="PacMan()" id="logo" src="../Repositorio-Pac/IMAGENS/Pac.png"></a>
                 </div>
                 <ul class="links">
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="paginaempresa.html">Informações da Empresa</a></li>
 
                     <li>
@@ -40,55 +40,46 @@
             </div>
         </nav>
     </div>
-    
-    <div class="MeioPagina">
 
+<div class="MeioPagina">
+    <div class="MeioPagina-textos">
+        <h3 class="H1">Tem dúvidas de qual peças escolher para montar o computador dos seus sonhos?<h3>
+        <p class="P1">Então você está no lugar certo!</p>
+        <p class="P1segundo">Para começar, clique no botão abaixo! </p> 
+        <button class="B1" onclick="CadastreSe()" >Cadastre-se</button>
     </div>
+        <div class="pcs">
+            <div class="img-pcs">
+                <div class="pc1">
+                    <img onclick="PcJogosLeves()" src="../Repositorio-Pac/IMAGENS/Gabinete até que bonito.jpg" >
+                </div>
 
-<div id="Informaçoes">
-    <h1 id="SobrePac">
-        Sobre nós PAC:
-    </h1>
+                <div onclick="PcJogosPesados()" class="pc2">
+                    <img src="../Repositorio-Pac/IMAGENS/Gabinete bonito.jpg" >
+                </div>
 
-    <h2>
-        Somos uma empresa com o propósito voltado a ajudar pessoas 
-        a montar seu computador ideal. 
-    </h2>
+                <div onclick="PcUsoGeral()" class="pc3">
+                    <img src="../Repositorio-Pac/IMAGENS/gabinete massa.jpg" >
+                </div>
+            </div>
 
-    <h1>
-        O que Fornecemos?
-    </h1>
+            <div class="info-pcs">
+                <p class="P2">Computadores Recomendados</p>
+            </div>
 
-    <h2>
-        Nós mostramos hardwares compatíveis com o propósito de computadores específicos. Sejam eles 
-        para uso geral ou para jogos pesados. Aqui nos mostramos peças de qualidade e que estão 
-        em alta no mercado.
-    </h2>
-
-    <h1>
-        Quem são os integrantes da PAC?
-    </h1>
-
-    <h2>
-        Abílio Gama Neto Junior.
-    </h2>
-    <h2>
-        Luis Eduardo Camacho Santos.
-    </h2>
-    <h2>
-        Alyne Aparecida Cittadela Faé.
-    </h2>
-    <h2>
-        Pedro henrique leal carneiro da silva.
-    </h2>
-</div> 
+            <div class="texto-pcs">
+                <p class="P3">Informações sobre os Computadores</p>
+                <button onclick="Informaçoes()" class="B2">Saiba mais</button>
+            </div>
+        </div>
+    </div>
 
 <div class="footer">
     <div class="icones">
         <h3 id="sitesCompras">Sites para comprar suas peças</h3>
-        <img onclick="Kabum()" id="kabum" src="../IMAGENS/Kabum icon.png">
-        <img onclick="Pichau()"  id="pichau" src="../IMAGENS/Pichau png.png">
-        <img onclick="Terabyte()" id="terabyte" src="../IMAGENS/Terabyte_icon supa.png">
+        <img onclick="Kabum()" id="kabum" src="../Repositorio-Pac/IMAGENS/Kabum icon.png">
+        <img onclick="Pichau()"  id="pichau" src="../Repositorio-Pac/IMAGENS/Pichau png.png">
+        <img onclick="Terabyte()" id="terabyte" src="../Repositorio-Pac/IMAGENS/Terabyte_icon supa.png">
     </div>
 
     <div class="contato">
@@ -96,6 +87,7 @@
         <p id="Alyne">Alyne_fae</p>
         <p id="Luis">_kynshogun</p>
         <p id="Abilio">biluux9</p>
+        <p id="Pedro">llealpedro</p>
     </div>
 
     <div class="textos">
@@ -105,6 +97,9 @@
         <p onclick="adrenaline()" id="Adrenaline">Adrenaline</p>
     </div>
 </div>
-<script src="../JS/home.js"></script>
+
+<script src="../Repositorio-Pac/JS/home.js"></script>
+<script src="../Repositorio-Pac/JS/login.js"></script>
+
 </body>
 </html>

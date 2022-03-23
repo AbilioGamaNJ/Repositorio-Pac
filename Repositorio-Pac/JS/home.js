@@ -25,3 +25,12 @@ function labz(){
 function adrenaline(){
     window.location.href="https://www.youtube.com/c/AdrenalineBr"
 }
+function PcJogosLeves(){
+    window.location.href="./pcjogosleves.html"
+}
+function PcJogosPesados(){
+    window.location.href="./pcjogospesados.html"
+}
+function PcUsoGeral(){
+    window.location.href="./pcusogeral.html"
+}

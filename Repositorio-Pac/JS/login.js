@@ -50,7 +50,7 @@ function entrar(){
   
       localStorage.setItem('auth', JSON.stringify(dadosUsuario))
   
-      window.location.href = './home.html' //MUDAR PARA HOME HTML
+      window.location.href = './index.html' //MUDAR PARA HOME HTML
   
     }else{
   

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body {
-    background-color: #3769b6;
-    
+    background-color:#3769b6;
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite;
     width: 100%;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
@@ -212,56 +213,26 @@ nav .content .links {
         font-size: 27px;
     }
 }
-.MeioPagina{
-    width: 100%;
-    
-}
-.Descrição{
-    color: white;
-    margin-top: 15vh;
-}
-#descrição{
-    color: white;
-    margin-left: 20px;
-}
-#descrição_info{
-    color: white;
-    margin-left: 50px;
-}
-.Table{
-    overflow-x: auto;
-}
-.Tabela{
-    table-layout: auto;
-    color: white ;
-    margin-top: 8vh;
-    margin-bottom: 9vh;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 1300px;
-}
-caption{
-    border-radius: 0.5px;
-    caption-side: top;
-    text-align: center;
-    background-color: #073386;
-    height: 30px;
+/*Meio da página*/
+
+.MeioPagina {
+  color: white;
 }
 
-th{
-    height: 40px;
-    border-radius: 0.5px;
-    padding: 1rem 1.2rem;
-    background-color:#0f4596 ;
-    border: 1px black;
-}
-td{
-    padding: 1rem 1.2rem;
-    border-radius: 0.5px;
-    background-color:#0f4596;
+@keyframes colors {
 
+    0%{
+        background-position: 0% 50%; 
+    }
+    50%{
+        background-position: 100% 50%;  
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
+/* Começo do footer */
+
 .footer{
     width: 100%;
     background-color:#0f4596;
@@ -325,6 +296,11 @@ td{
     -ms-transform: scale(1.3);
     transform: scale(1.1);
 }
+#Pedro:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.1);  
+}
 #TecnoArt:hover{
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
@@ -341,19 +317,117 @@ td{
     transform: scale(1.1);
 }
 
+
 @media screen and (max-width:700px) {
-   
     .footer{
-        margin-top: 100px !important;
         display: flex;
         flex-direction: column;
-        margin-top: 200px;
-        
     }
     .contato{
         margin-top: 70px;
     }
     .textos{
         margin-top: 50px;
+    }
+}
+@media  screen and (max-width: 540px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .contato{
+        margin-top: 5px;
+    }
+    .textos{
+        margin-top: 5px;
+    }
+
+} 
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+     margin-bottom: 10px;
+     text-align: center;
+}
+
+h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+#info_peças{
+    margin-top: 100px;
+}
+
+
+.quadro1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.quadro1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 2px white;
+    padding: 10px; 
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.quadro1 img:hover{
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.1);
+}
+
+.quadro2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    z-index: 1;
+}
+.quadro2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 2px white;
+    padding: 10px; 
+    transition: 0.2s;
+}
+
+.quadro2 img:hover{
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.1);
+}
+
+@media screen and (max-width:700px){
+    .quadro1{
+        flex-direction: column;
+    }
+
+    .quadro1 img{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .quadro2{
+        flex-direction: column;
+    }
+    .quadro2 img{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
     }
 }

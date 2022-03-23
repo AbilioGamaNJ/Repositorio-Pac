@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da Empresa</title>
+    <link rel="stylesheet" href="../Repositorio-Pac/CSS/paginaempresa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="../Repositorio-Pac/IMAGENS/Pac.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <input type="checkbox" id="mostrar-menu">
+            <label for="mostrar-menu" class="icone-menu"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img id="logo" src="../Repositorio-Pac/IMAGENS/Pac.png"></a>
+                </div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="paginaempresa.html">Informações da Empresa</a></li>
+
+                    <li>
+                        <a href="#" class="menu-dropdown">Pcs prontos</a>
+                        <input type="checkbox" id="mostrar-links">
+                        <label for="mostrar-links">Pcs prontos</label>
+                        <ul>
+                            <li><a href="pcjogosleves.html">Pc para jogos leves</a></li>
+                            <li><a href="pcjogospesados.html">Pc para jogos pesados</a></li>
+                            <li><a href="pctrabalho.html">Pc para trabalho</a></li>
+                            <li><a href="pcusogeral.html">Pc para uso geral</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="informaçõespeças.html">Informações das peças</a></li>
+                    <li><a href="cadastro.html">cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="MeioPagina">
+
+
+
+        <div id="Informaçoes">
+            <h1 id="SobrePac">
+                Sobre nós PAC:
+            </h1>
+
+            <h2>
+                Somos uma empresa com o propósito voltado a ajudar pessoas
+                a montar seu computador ideal.
+            </h2>
+
+            <h1>
+                O que Fornecemos?
+            </h1>
+
+            <h2>
+                 Nós mostramos hardwares compatíveis entre si com o propósito de montar computadores para usos  específicos. Sejam estes
+                para ver um simples vídeo no Youtube ou para Jogar os jogos mais atuais. Aqui nos mostramos peças de qualidade e que estão
+                em alta no mercado.
+            </h2>
+
+            <h1>
+                Quem são os integrantes da PAC?
+            </h1>
+
+            <h2>
+                Abílio Gama Neto Junior.
+            </h2>
+            <h2>
+                Luis Eduardo Camacho Santos.
+            </h2>
+            <h2>
+                Alyne Aparecida Cittadela Faé.
+            </h2>
+            <h2>
+                Pedro Henrique Leal Carneiro da silva.
+            </h2>
+        </div>
+
+        <div class="footer">
+            <div class="icones">
+                <h3 id="sitesCompras">Sites para comprar suas peças</h3>
+                <img onclick="Kabum()" id="kabum" src="../Repositorio-Pac/IMAGENS/Kabum icon.png">
+                <img onclick="Pichau()" id="pichau" src="../Repositorio-Pac/IMAGENS/Pichau png.png">
+                <img onclick="Terabyte()" id="terabyte" src="../Repositorio-Pac/IMAGENS/Terabyte_icon supa.png">
+            </div>
+
+            <div class="contato">
+                <h3 id="tituloCtt">Nossas Redes Sociais</h3>
+                <p id="Alyne">Alyne_fae</p>
+                <p id="Luis">_kynshogun</p>
+                <p id="Abilio">biluux9</p>
+                <p id="Pedro">llealpedro</p>
+            </div>
+
+            <div class="textos">
+                <h3 id="tituloTextos">Canais que recomendamos</h3>
+                <p onclick="tecnoArt()" id="TecnoArt">TecnoArt</p>
+                <p onclick="labz()" id="Labz">Labz</p>
+                <p onclick="adrenaline()" id="Adrenaline">Adrenaline</p>
+            </div>
+        </div>
+        <script src="../Repositorio-Pac/JS/home.js"></script>
+</body>
+
+</html>

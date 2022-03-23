@@ -325,6 +325,11 @@ td{
     -ms-transform: scale(1.3);
     transform: scale(1.1);
 }
+#Pedro:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.1);  
+}
 #TecnoArt:hover{
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
