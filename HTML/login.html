@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login PAC</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="shortcut icon" href="../IMAGENS/Pac com instinto superior.png" type="image/x-icon">
+</head>
+<body>
+
+
+    <section class="gradient">
+
+        <div class="container">
+    
+            <div class="box">
+    
+                <h2>Seu perfil</h2>
+
+                <div class="content">
+                    <label for="email" id="emailLabel">E-mail:</label>
+                    <input type="email" id="email" name="email" >
+                    <label for="senha" id="senhaLabel">Senha:</label>
+                    <input type="password" id="senha" name="senha" >
+                </div>
+
+                <div class="visible">
+                    <input type="checkbox" id="senhaVisivel" onclick="senhaRevelada()">
+                    <label for="senhaVisivel" class="imgSenha"></label>
+                </div>
+
+                <div class="botao">
+                    <button onclick="entrar()">Login</button>
+                </div>
+    
+            </div>
+        
+        </div>
+
+    </section>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/login.js"></script>
+</body>
+</html>
