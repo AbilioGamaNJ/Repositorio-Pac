@@ -236,7 +236,7 @@ h2{
     margin-top: 100px;
 }
 #Informaçoes{
-    margin-top: 220px;
+    margin-top: 10px;
 }
 /* Começo do footer */
 
@@ -366,10 +366,19 @@ h2{
 }
 @media screen and (max-width: 1920px) and (min-width: 1365px){
     .footer{
-        margin-top: 200px;
+        margin-top: 160px;
     }
     #SobrePac{
-        margin-top: 180px;
+        margin-top: 200px;
+        
+    }
+}
+@media screen and (max-width:1367px) {
+    .footer{
+        margin-top: 60px;
+    }
+    #SobrePac{
+        margin-top: 100px;
         
     }
 }

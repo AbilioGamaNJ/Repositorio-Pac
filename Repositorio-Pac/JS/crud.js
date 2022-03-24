@@ -163,6 +163,3 @@ for(let i = 0; i < arraia.length; i++){
 function Mostruario(){
     window.location.href="./mostruario.html"
 }
-function CadastroCliente(){
-    window.location.href="./cliente.html"
-}
